@@ -3,5 +3,12 @@
   "version": "0.1.0",
   "dependencies": {
     "node-telegram-bot-api": "^0.21.1"
+  },
+  "engines": {
+    "node": "6.1.0",
+    "npm": "3.9.x"
+  },
+  "scripts": {
+    "start": "node server.js"
   }
 }
