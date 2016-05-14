@@ -5,6 +5,8 @@ let token = '201017974:AAFEXs-5MOchzq4auJQq1RETPenoRNPXXYw';
 // Setup polling way
 let bot = new TelegramBot(token, {polling: true});
 
+console.log('bot server started...');
+
 /*
 // Matches /echo [whatever]
 bot.onText(/\/echo (.+)/, (msg, match) => {

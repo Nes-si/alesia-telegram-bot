@@ -1,7 +1,8 @@
 {
   "name": "alesia-telegram-bot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "dependencies": {
+    "express": "^4.13.4",
     "node-telegram-bot-api": "^0.21.1"
   },
   "engines": {
@@ -9,6 +10,6 @@
     "npm": "3.9.x"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   }
 }
