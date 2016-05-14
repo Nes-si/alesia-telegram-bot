@@ -1,2 +1,2 @@
-require('./serverBot');
-require('./serverWeb');
+let bot = require('./serverBot');
+require('./serverWeb')(bot);

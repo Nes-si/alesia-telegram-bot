@@ -3,7 +3,11 @@ let TelegramBot = require('node-telegram-bot-api');
 let token = '201017974:AAFEXs-5MOchzq4auJQq1RETPenoRNPXXYw';
 
 // Setup polling way
-let bot = new TelegramBot(token, {polling: true});
+//let bot = new TelegramBot(token, {polling: true});
+
+// setup webHook
+let bot = new TelegramBot(token);
+bot.setWebHook('https://alesia-telegram-bot.herokuapp.com/' + bot.token);
 
 console.log('bot server started...');
 
@@ -93,3 +97,5 @@ bot.on('message', (msg) => {
     bot.forwardMessage(managerIds[0], chatId, msg.message_id);
   }
 });
+
+module.exports = bot;
